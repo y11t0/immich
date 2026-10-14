@@ -97,6 +97,7 @@ class LoginForm extends HookConsumerWidget {
       // Guard empty URL
       if (serverUrl.isEmpty) {
         ImmichToast.show(context: context, msg: context.t.login_form_server_empty, toastType: ToastType.error);
+        return;
       }
 
       try {
